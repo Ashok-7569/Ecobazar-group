@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #059669; /* Emerald 600 */
+    --primary-gradient: linear-gradient(135deg, #059669 0%, #34d399 100%);
+    --surface-color: #ffffff;
+    --bg-color: #f0fdf4; /* Very light mint */
+    --text-main: #1f2937;
+    --text-light: #6b7280;
+    --glass-bg: rgba(255, 255, 255, 0.95);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.5);
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.01);
+    --radius-lg: 24px;
+    --radius-md: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- LAYOUT --- */
+.pro-body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.pro-container {
+    max-width: 1280px;
+    margin: 40px auto;
+    padding: 0 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --- MODERN NAVBAR --- */
+.navbar {
+    background: var(--surface-color);
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: var(--shadow-sm);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    letter-spacing: -0.02em;
+}
+
+/* --- CARDS --- */
+.pro-card {
+    background: var(--surface-color);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.pro-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(5, 150, 105, 0.2);
+}
+
+/* --- BUTTONS --- */
+button {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    transition: all 0.2s;
+}
+
+.btn-primary, .btn-logout {
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+}
+
+.btn-primary {
+    background: var(--primary-gradient);
+    color: white;
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25);
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(5, 150, 105, 0.35);
+}
+
+.btn-logout {
+    background: white;
+    color: #ef4444;
+    border: 1px solid #fee2e2;
+}
+
+.btn-logout:hover {
+    background: #fef2f2;
+    border-color: #fecaca;
+}
+
+.btn-profile {
+    background: transparent;
+    color: var(--text-light);
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.btn-profile:hover { color: var(--primary-color); }
+
+/* --- INPUTS --- */
+input, select, textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #f9fafb;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+    color: var(--text-main);
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    background: white;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(5, 150, 105, 0.1);
+}
+
+/* --- LOGIN PAGE SPECIFIC --- */
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Background Image Setup */
+    background: url('/bg.gif') no-repeat center center;
+
+    /* FORCE STRETCH: Use 100% 100% to show the whole GIF */
+    background-size: 100% 100%;
+
+    position: relative;
+    overflow: hidden;
+}
+/* Dark overlay for readability */
+.login-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(5, 40, 20, 0.6), rgba(0, 0, 0, 0.4));
+    backdrop-filter: blur(4px);
+}
+
+.login-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 48px;
+    border-radius: 32px;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}

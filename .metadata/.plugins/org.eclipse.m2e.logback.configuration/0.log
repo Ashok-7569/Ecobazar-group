@@ -1,0 +1,17 @@
+2026-01-06 15:05:48,960 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2026-01-06 15:06:20,120 [Worker-19: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.infosys:ecobazar:0.0.1-SNAPSHOT @ C:\Users\SKY WALKER\OneDrive\Desktop\JAVA FS\Ecobazar\pom.xml.
+2026-01-06 15:06:21,621 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-01-06 15:06:21,649 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-01-06 15:06:21,666 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\SKY WALKER\OneDrive\Desktop\JAVA FS\Ecobazar\src\test\resources
+2026-01-06 15:06:23,109 [Worker-14: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.infosys:ecobazar:0.0.1-SNAPSHOT @ C:\Users\SKY WALKER\OneDrive\Desktop\JAVA FS\Ecobazar\pom.xml.
+2026-01-06 15:06:25,917 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-01-06 15:06:25,943 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-01-06 15:06:25,946 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\SKY WALKER\OneDrive\Desktop\JAVA FS\Ecobazar\src\test\resources
+2026-01-06 15:24:45,024 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2026-01-06 15:25:27,866 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.practice:LearningSpringFramework:0.0.1-SNAPSHOT @ C:\Users\SKY WALKER\OneDrive\Desktop\JavaSessions\LearningSpringFramework\LearningSpringFramework\pom.xml.
+2026-01-06 15:25:28,757 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-01-06 15:25:28,776 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-01-06 15:25:28,779 [Worker-6: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\SKY WALKER\OneDrive\Desktop\JavaSessions\LearningSpringFramework\LearningSpringFramework\src\test\resources
+2026-01-06 15:25:30,398 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2026-01-06 15:25:30,400 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2026-01-06 15:25:30,402 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\SKY WALKER\OneDrive\Desktop\JavaSessions\LearningSpringFramework\LearningSpringFramework\src\test\resources
